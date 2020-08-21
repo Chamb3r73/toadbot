@@ -1,16 +1,16 @@
 {
 
-  "name": "Example",
+  "name": "toadbot",
 
-  "description": "Example",
+  "description": "(prefix: t!) bot that does toad's bidding",
 
-  "version": "0.0.0",
+  "version": "0.1.0",
 
-  "main": "bot.js",
+  "main": "index.js",
 
   "scripts": {
 
-    "start": "node bot.js"
+    "start": "node index.js"
 
   },
 
