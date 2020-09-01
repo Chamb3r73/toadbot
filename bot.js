@@ -8,6 +8,7 @@ var prefix = "t!";
 
 client.once('ready', () => {
 	console.log('Ready!');
+	console.log('balls')
 });
 
 client.on('message', async message => 
