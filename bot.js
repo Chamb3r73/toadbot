@@ -18,6 +18,8 @@ client.on('message', message => {
 
        message.reply('pong');
 
+       } else if (message.content === 'test') {
+           message.reply('test success')
        }
 
 });
