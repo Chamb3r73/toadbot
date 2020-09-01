@@ -1,4 +1,4 @@
-const { prefix, token } = require('./config.json');
+// const { prefix, token } = require('./config.json');
 const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
