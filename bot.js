@@ -26,7 +26,7 @@ client.on('message', message => {
 
             } else if (message.content === 'test') {
                 message.reply('test success')
-            } else if (command === test2) {
+            } else if (command === 'test2') {
                 message.reply('test2 success')
             }
 
