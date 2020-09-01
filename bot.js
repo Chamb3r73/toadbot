@@ -1,9 +1,9 @@
 // const { prefix, token } = require('./config.json');
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var PORT = process.env.PORT || 5000;
-var prefix = ("t!")
+// var PORT = process.env.PORT || 5000;
+var prefix = "t!";
 
 
 client.once('ready', () => {
