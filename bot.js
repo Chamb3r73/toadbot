@@ -8,7 +8,6 @@ var prefix = "t!";
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setActivity('bot poggers')
 });
 
 client.on('message', async message => 
