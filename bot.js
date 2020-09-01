@@ -21,7 +21,10 @@ client.on('message', async message =>
 	if (message.content.startsWith(`${prefix}ping`)) {
 		message.channel.send('it finally works thank god');
 	
-	}
+	} else if (message.content === 'ping') {
+		message.reply('pong');
+
+       }
 });
 
 client.login(process.env.BOT_TOKEN);
