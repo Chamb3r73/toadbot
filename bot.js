@@ -18,7 +18,7 @@ client.on('message', async message =>
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
 	var prefix = "t!";
-	if (message.content.startsWith(`${prefix}ping`)) {
+	if (message.content.startsWith(`${prefix}test`)) {
 		message.channel.send('it finally works thank god');
 	
 	} else if (message.content === 'ping') {
