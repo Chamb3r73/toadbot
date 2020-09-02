@@ -118,6 +118,7 @@ client.on('message', async message =>
 		const pogEmbed = new Discord.MessageEmbed()
 			.attachFiles(['pog.gif'])
 			.setImage('attachment://pog.gif')
+			.setcolour('#F47FFF')
 		message.channel.send(pogEmbed)
 	}
 
