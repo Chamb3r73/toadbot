@@ -28,7 +28,7 @@ client.on('message', message => {
                 message.reply('test success')
             } else if (command === 'test2') {
                 message.reply('test2 success')
-            } if (command === 'ping')) {
+            } if (command === 'ping') {
 	               message.channel.send('Pong.');
 	
 	           } else if (command === 'server') {
