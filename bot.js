@@ -118,7 +118,7 @@ client.on('message', async message =>
 		const pogEmbed = new Discord.MessageEmbed()
 			.attachFiles(['../pog.mov'])
 			.setImage('attachment://pog.mov')
-	}
+	}	message.channel.send(pogEmbed)
 
 
 
