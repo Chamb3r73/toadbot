@@ -116,7 +116,7 @@ client.on('message', async message =>
 		message.delete(args)
 	} else if (command === 'pog') {
 		const pogEmbed = new Discord.MessageEmbed()
-			.attachFiles(['../pog.mov'])
+			.attachFiles(['pog.mov'])
 			.setImage('attachment://pog.mov')
 		message.channel.send(pogEmbed)
 	}
