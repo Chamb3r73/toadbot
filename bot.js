@@ -24,6 +24,7 @@ client.on('message', async message =>
 			.setColor('#F47FFF')
 			.setTitle('Server Stats')
 			.setDescription(`Server name: ${message.guild.name}\nTotak members: ${message.guild.membercount}`)
+		message.channel.send(serverEmbed)
 	
 
 	} else if (command === 'toad') {
