@@ -98,7 +98,7 @@ client.on('message', async message =>
 			.setColor('#F47FFF')
 			.setTitle('toadbot Commands')
 			.setDescription('t!bot - bot status \n !toad - random toad pic (dm me more) \n t!bot - bot status \n t!server - server info \n t!bobberto - epik funny \n t!say - bot repeats what you said and deletes your message')
-			.attachFiles(['../linusface.jpg'])
+			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
 			.setFooter('i was made by @toad#9999') 
 		message.channel.send(helpEmbed)
