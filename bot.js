@@ -23,7 +23,7 @@ client.on('message', async message =>
 		const serverEmbed = new Discord.MessageEmbed()
 			.setColor('#F47FFF')
 			.setTitle('Server Stats')
-			.setDescription(`Server name: ${message.guild.name}\nTotak members: ${message.guild.membercount}`)
+			.setDescription(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nOwner: ${message.guild.owner}`)
 		message.channel.send(serverEmbed)
 	
 
