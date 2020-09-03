@@ -154,7 +154,9 @@ client.on('message', async message =>
 			Reason = "none"
 		}
 		User.role.add(role)
-	}
+	} client.on('guildMemberAdd', (guildMember) => {
+		guildMember.addRole(guildMember.guild.roles.find(role => role.name === "ew"));
+	 });
 
 
 
