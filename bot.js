@@ -154,7 +154,7 @@ client.on('message', async message =>
 			Reason = "none"
 		}
 		User.role.add(role)
-	} client.on('messageReactionAdd', async (reaction, user) => {
+	} bot.on('messageReactionAdd', async (reaction, user) => {
 		//Filter the reaction
 		if (reaction.id === "regional_indicator_m") {
 		  // Define the emoji user add
@@ -165,7 +165,7 @@ client.on('message', async message =>
 			message.member.addRole(role.id);
 		  }
 		}
-	  }); client.on('messageReactionAdd', async (reaction, user) => {
+	  }); bot.on('messageReactionAdd', async (reaction, user) => {
 		//Filter the reaction
 		if (reaction.id === "regional_indicator_f") {
 		  // Define the emoji user add
@@ -176,7 +176,7 @@ client.on('message', async message =>
 			message.member.addRole(role.id);
 		  }
 		}
-	  }); client.on('messageReactionAdd', async (reaction, user) => {
+	  }); bot.on('messageReactionAdd', async (reaction, user) => {
 		//Filter the reaction
 		if (reaction.id === "regional_indicator_t") {
 		  // Define the emoji user add
