@@ -111,7 +111,7 @@ client.on('message', async message =>
 		if (!args.length) {
 			return message.channel.send(`say something smh ${message.author}!`);
 		}
-		if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt (dont ping @ everyone you fucking tool')
+		if (!user.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt (dont ping @ everyone you fucking tool')
 		message.channel.send(`${args.join(' ')}`);
 		message.delete(args)
 	} else if (command === 'pog') {
