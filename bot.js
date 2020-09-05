@@ -144,51 +144,7 @@ client.on('message', async message =>
 		}
 		User.kick({reason: banReason})
 		
-	} else if (command === 'mute') {
-		if (!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.send('invalid perms get rekt')
-		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
-		if (!User) return message.channel.send('invalid user lmao')
-		if (User.hasPermission("MUTE_MEMBERS")) return message.reply('lmao u have no perms git gud noob')
-		let muteReason = args.join(" ").slice(22);
-		var role = User.guild.roles.cache.find(role => role.name === "muted");
-		if(!muteReason) {
-			Reason = "none"
-		}
-		User.role.add(role)
-	} bot.on('messageReactionAdd', async (reaction, user) => {
-		//Filter the reaction
-		if (reaction.id === "regional_indicator_m") {
-		  // Define the emoji user add
-		  let role = message.guild.roles.cache.find(role => role.name === 'hh');
-		  if (message.channel.name !== 'roles') {
-			message.reply(':x: You must go to the channel #roles');
-		  } else {
-			message.member.addRole(role.id);
-		  }
-		}
-	  }); bot.on('messageReactionAdd', async (reaction, user) => {
-		//Filter the reaction
-		if (reaction.id === "regional_indicator_f") {
-		  // Define the emoji user add
-		  let role = message.guild.roles.cache.find(role => role.name === 'sh');
-		  if (message.channel.name !== 'roles') {
-			message.reply(':x: You must go to the channel #roles');
-		  } else {
-			message.member.addRole(role.id);
-		  }
-		}
-	  }); bot.on('messageReactionAdd', async (reaction, user) => {
-		//Filter the reaction
-		if (reaction.id === "regional_indicator_t") {
-		  // Define the emoji user add
-		  let role = message.guild.roles.cache.find(role => role.name === 'tt');
-		  if (message.channel.name !== 'roles') {
-			message.reply(':x: You must go to the channel #roles');
-		  } else {
-			message.member.addRole(role.id);
-		  }
-		}
-	  });
+	}
 
 
 
