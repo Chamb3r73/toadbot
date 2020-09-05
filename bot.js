@@ -108,6 +108,7 @@ client.on('message', async message =>
 	} else if (command === 'cruise') {
 		message.channel.send('toadbot is a fan of tom cruise confirmed!!!11!!!!!')
 	} else if (command === 'say') {
+		if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt (dont ping @ everyone you fucking tool')
 		if (!args.length) {
 			return message.channel.send(`say something smh ${message.author}!`);
 		}
