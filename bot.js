@@ -113,10 +113,10 @@ client.on('message', async message =>
 		if (!args.length) {
 			return message.channel.send(`say something smh ${message.author}!`);
 		}
-		if (message.content === '@everyone') {
+		if (message.content === 't!say @everyone') {
 			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
 		}
-		else if (message.content === '@here') {
+		else if (message.content === 't!say @here') {
 			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
 		}
 		else {
