@@ -107,13 +107,24 @@ client.on('message', async message =>
 
 	} else if (command === 'cruise') {
 		message.channel.send('toadbot is a fan of tom cruise confirmed!!!11!!!!!')
-	} else if (command === 'say') {
+		
+		
+	} } else if (command === 'say') {
 		if (!args.length) {
 			return message.channel.send(`say something smh ${message.author}!`);
 		}
-		if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt (dont ping @ everyone you fucking tool)')
-		message.channel.send(`${args.join(' ')}`);
-		message.delete(args)
+		if (message.content.includes === '@everyone') {
+			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
+		}
+		else if (message.content.includes === '@here') {
+			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
+		}
+		else {
+			message.channel.send(`${args.join(' ')}`);
+			message.delete(args)
+		}
+		
+		
 	} else if (command === 'pog') {
 		const pogEmbed = new Discord.MessageEmbed()
 			.attachFiles(['pog.gif'])
