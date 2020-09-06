@@ -116,7 +116,7 @@ client.on('message', async message =>
 		if (message.content.includes('@everyone')) {
 			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
 		}
-		else if (message.content.incudes('@here')) {
+		else if (message.content.includes('@here')) {
 			if (!message.member.hasPermission("MENTION_EVERYONE")) return message.channel.send('invalid perms get rekt')
 		}
 		else {
