@@ -109,7 +109,7 @@ client.on('message', async message =>
 		message.channel.send('toadbot is a fan of tom cruise confirmed!!!11!!!!!')
 		
 		
-	} } else if (command === 'say') {
+	} else if (command === 'say') {
 		if (!args.length) {
 			return message.channel.send(`say something smh ${message.author}!`);
 		}
