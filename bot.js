@@ -154,6 +154,15 @@ client.on('message', async message =>
 		}
 		User.kick({reason: banReason})
 		
+	} else if (command === 'invite') {
+		const invEmbed = new Discord.MessageEmbed()
+			.attachFiles[([linusface.jpg])
+			.setThumbnail('attachment://linusface.jpg')
+			.setTitle('click to invite trolololol')
+			.setURL('http://discord.com/api/oauth2/authorize?client_id=723171863886299156&permissions=2146959095&scope=bot')
+			.setDescription(':flushball:')
+			.setFooter('i was made by @toad#9999')
+		message.channel.send(invEmbed)
 	}
 
 
