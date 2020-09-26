@@ -14,7 +14,7 @@ client.once('ready', () => {
 		name: 'hey',
 		type: 'STREAMING',
 		url: 'twitch.tv/chamb3r_'
-    }
+    	}
 });
 
 client.on('message', async message => 
