@@ -8,6 +8,12 @@ var prefix = ("t!")
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
+	bot.user.setPresence({
+        game: {
+            name: 'hey',
+            type: "PLAYING",
+        }
+    });
 });
 
 client.on('message', async message => 
