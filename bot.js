@@ -8,11 +8,13 @@ var prefix = ("t!")
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
-	client.user.setPresence({
-        game: {
-            name: 'hey'
-        }
-    });
+	bot.user.setPresence({
+	    status: 'online',
+	    activity: {
+		name: 'hey',
+		type: 'STREAMING',
+		url: 'twitch.tv/chamb3r_'
+    }
 });
 
 client.on('message', async message => 
