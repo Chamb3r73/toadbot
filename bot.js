@@ -98,7 +98,18 @@ client.on('message', async message =>
 		const helpEmbed = new Discord.MessageEmbed()
 			.setColor('#F47FFF')
 			.setTitle('toadbot Commands')
-		.setDescription('t!bot - bot status \n t!toad - random toad pic (dm me more) \n t!server - server info \n t!bobberto - epik funny \n t!say - bot repeats what you said and deletes your message \n t!help - list of commands \n t!pog - poggers \n t!kick - kicks @ed user \n t!ban - bans @ed user \n t!mute - mutes @ed user [IN PROGRESS] \n t!invite - invite link just for you buddy')
+			.addFields(
+				{
+					name: "babbabouey:",
+					value: "t!bot - bot status \n t!toad - random toad pic (dm me more) \n t!server - server info \n t!bobberto - epik funny \n t!say - bot repeats what you said and deletes your message \n t!help - list of commands \n t!pog - poggers \n t!kick - kicks @ed user \n t!ban - bans @ed user \n t!invite - invite link just for you buddy",
+				},
+				
+				{
+					name: "coming soon",
+					value: "t!mute - mutes @ed user \n reaction roles (exciting)",
+				}
+			)
+		
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
 			.setFooter('i was made by @toad#9999') 
