@@ -100,22 +100,11 @@ client.on('message', async message =>
 			.setTitle('toadbot Commands')
 			.addFields(
 				{
-					name: "moderation:",
-					value: "1. kick (Kicks the @ user)\n 2. ban (bans the @ user) \n 3. Mute (Mutes the @ user, in progress)",
+					name: "babbabouey:",
+					value: "kick (Kicks the @ user)\n ban (bans the @ user) \n Mute (Mutes the @ user, in progress) \n bobberto (epik funny) \n say (repeats what user said and deletes the message) \n Pog (poggers) \n cruise (toadbot is fan of Tom cruise om!!!) \n server: (returns server info) \n invite (doitdoitdoitdoitdoitdoit)",
 					inline: false
 				},
 
-				{
-					name: "entertainment:",
-					value: "1.bobberto (big funny) \n 2. say (repeats what user said and deletes the message) \n 3. Pog (poggers) \n 4. cruise (toadbot is fan of Tom cruise om!!!)",
-					inline: false
-				},
-
-				{
-					name: "info",
-					value: "1.server: (returns server info) \n 2. invite (doitdoitdoitdoitdoitdoit)",
-					inline: false
-				}
 			)
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
