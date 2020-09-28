@@ -8,7 +8,6 @@ var prefix = ("t!")
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
-
 });
 
 client.on('message', async message => 
@@ -99,7 +98,25 @@ client.on('message', async message =>
 		const helpEmbed = new Discord.MessageEmbed()
 			.setColor('#F47FFF')
 			.setTitle('toadbot Commands')
-			.setDescription('t!bot - bot status \n !toad - random toad pic (dm me more) \n t!server - server info \n t!bobberto - epik funny \n t!say - bot repeats what you said and deletes your message \n t!help - list of commands \n t!pog - poggers \n kick - kicks @ed user \n t!ban - bans @ed user \n t!mute - mutes @ed user [IN PROGRESS]')
+			.addFields(
+				{
+					name: "moderation:",
+					value: "1. kick (Kicks the @ user)\n 2. ban (bans the @ user) \n 3. Mute (Mutes the @ user, in progress)",
+					inline: false
+				},
+
+				{
+					name: "entertainment:",
+					value: "1.bobberto (big funny) \n 2. say (repeats what user said and deletes the message) \n 3. Pog (poggers) \n 4. cruise (toadbot is fan of Tom cruise om!!!)",
+					inline: false
+				},
+
+				{
+					name: "info",
+					value: "1.server: (returns server info) \n 2. invite (doitdoitdoitdoitdoitdoit)",
+					inline: false
+				}
+			)
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
 			.setFooter('i was made by @toad#9999') 
@@ -155,16 +172,6 @@ client.on('message', async message =>
 		}
 		User.kick({reason: banReason})
 		
-	} else if (command === 'invite') {
-		const invEmbed = new Discord.MessageEmbed()
-			.setColor('#F47FFF')
-			.setTitle('invite here LOL')
-			.setURL('https://discord.com/api/oauth2/authorize?client_id=723171863886299156&permissions=2147418055&scope=bot')
-			.setDescription('doitdoitdoitdoitdoit')
-			.attachFiles(['linusface.jpg'])
-			.setThumbnail('attachment://linusface.jpg')
-			.setFooter('i was made by @toad#9999')
-		message.channel.send(invEmbed)
 	}
 
 
