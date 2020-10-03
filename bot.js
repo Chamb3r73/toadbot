@@ -12,7 +12,7 @@ client.once('ready', () => {
 		status: 'online',
 		activity: {
 			name: "please  mother",
-			type: 'CUSTOM_STATUS'
+			type: 'LISTENING'
 		}
 	})
 });
