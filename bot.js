@@ -8,11 +8,13 @@ var prefix = ("t!")
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
-	status: 'online',
-	activity: {
-		name: "what the",
-		type: 'PLAYING'
-	}
+	client.user.setPresence({
+		status: 'online',
+		activity: {
+			name: "what the",
+			type: 'PLAYING'
+		}
+	})
 });
 
 client.on('message', async message => 
