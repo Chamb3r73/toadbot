@@ -11,7 +11,7 @@ client.once('ready', () => {
 	setInterval(function(){
 		let displayedStatus = statusChoice[Math.floor(Math.random()*statusChoice.length)];
 		client.user.setPresence({
-			status: 'idle',
+			status: 'online',
 			activity:{
 				name: displayedStatus
 			}
