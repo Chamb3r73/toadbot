@@ -11,8 +11,8 @@ client.once('ready', () => {
 	client.user.setPresence({
 		status: 'online',
 		activity: {
-			name: "what the",
-			type: 'PLAYING'
+			name: "please  mother",
+			type: 'CUSTOM_STATUS'
 		}
 	})
 });
