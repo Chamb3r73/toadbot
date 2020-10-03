@@ -4,17 +4,19 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
-
+let statusChoice = ['please mother', 'cock and ball torture', 'come to ends i dare you bruv', 'mans finna shank you and your dem up'];
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
-	client.user.setPresence({
-		status: 'online',
-		activity: {
-			name: "please  mother",
-			type: 'LISTENING'
-		}
-	})
+	setInterval(function(){
+		let displayedStatus = statusChoice[Math.floor(Math.random()*statusChoice.length)];
+		client.user.setPresence({
+			status: 'idle',
+			activity:{
+				name: displayedStatus
+			}
+		})
+	},20000)
 });
 
 client.on('message', async message => 
