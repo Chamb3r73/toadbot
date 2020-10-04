@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
-let statusChoice = ['please mother', 'cock and ball torture', 'come to ends i dare you bruv', 'mans finna shank you and your dem up'];
+let statusChoice = ['please mother', 'cock and ball torture', 'come to ends i dare you bruv', 'sex with nmarkov', 'polish toilet spin basshunter dota homosex K19191', 'Counter-Strike: Global Cumfensive', ':toad:', 'Gato Tom, Estas bn? collaspso. coronavirus.'];
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
