@@ -177,8 +177,8 @@ client.on('message', async message =>
 	} else if (message.content === 'poggy') {
 		const reactionEmoji = message.guild.emojis.cache.find(emoji => emoji.name === 'toad');
 		message.react(reactionEmoji);
-	} else if (command === 'poggy') {
-		message.author.send("poggy")
+	} else if (command === 'toadcoin register') {
+		message.reply("test")
 	}
 
 
