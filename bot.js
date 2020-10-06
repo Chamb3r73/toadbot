@@ -174,6 +174,8 @@ client.on('message', async message =>
 		}
 		User.kick({reason: banReason})
 		
+	} else if (message.content === 'poggy') {
+		message.react(message.guild.emojis.cache.get('763074600527200296'))
 	}
 
 
