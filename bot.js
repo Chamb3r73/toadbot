@@ -176,7 +176,7 @@ client.on('message', async message =>
 		
 	} else if (command === 'invite') {
 		const invEmbed = new Discord.MessageEmbed()
-			.attachFiles[([linusface.jpg])]
+			.attachFiles[(['linusface.jpg'])]
 			.setThumbnail('attachment://linusface.jpg')
 			.setTitle('click to invite trolololol')
 			.setURL('http://discord.com/api/oauth2/authorize?client_id=723171863886299156&permissions=2146959095&scope=bot')
