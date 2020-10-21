@@ -183,8 +183,8 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
-	} else if (message.content === 'fuck') {
-		message.reply('you absolute cunt swear one more time and ill fucking kill you dipshit')
+	} else if (message.content.includes === 'test') {
+		message.reply('test success')
 	}
 
 
