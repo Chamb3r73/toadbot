@@ -95,7 +95,7 @@ client.on('message', async message =>
 		const botEmbed = new Discord.MessageEmbed()
 			.setColor('#F47FFF')
 			.setTitle('Bot Status')
-			.setDescription(`Active and Online\n The bot is in: ${client.guilds.cache.size}`)
+			.setDescription(`Active and Online\n The bot is in: ${client.guilds.cache.size} servers`)
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
 			.setFooter('i was made by @toad#9999')
