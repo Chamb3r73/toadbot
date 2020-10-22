@@ -197,6 +197,7 @@ client.on('message', async message =>
 client.on('message', async message => {
 	console.log('message was sent')
 	console.log(`this message was created at ${message.createdTimestamp}`)
+	console.log(`message content: ${message}`)
 });
 
 
