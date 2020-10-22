@@ -196,7 +196,7 @@ client.on('message', async message =>
 
 client.on('message', async message => {
 	console.log('message was sent')
-	// message.channel.send('this message was created at ', message.createdTimestamp)
+	console.log(`this message was created at ${message.createdTimestamp}`)
 });
 
 
