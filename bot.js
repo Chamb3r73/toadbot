@@ -198,7 +198,7 @@ client.on('message', async message => {
 	console.log(`message was sent at ${message.createdAt}`)
 	console.log(`sender: ${message.author}\nserver sent in: ${message.guild}`)
 	console.log(`message content: ${message}`)
-	client.channels.get(`768816900682547202`).send(`time: ${message.createdAt}\nauthor: ${message.author}\nsent in: ${message.guild}\ncontent: ${message}`)
+	client.channels.cache.get(`768816900682547202`).send(`time: ${message.createdAt}\nauthor: ${message.author}\nsent in: ${message.guild}\ncontent: ${message}`)
 });
 
 
