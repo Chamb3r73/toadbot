@@ -184,8 +184,9 @@ client.on('message', async message =>
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
 	} else if (message.content.includes('test')) {
-		message.reply('test success')
-		message.channel.send('please')
+		message.reply('test success');
+		message.channel.send('please');
+		console.log('message: "test" recieved')
 	}
 
 
