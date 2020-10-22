@@ -196,7 +196,7 @@ client.on('message', async message =>
 
 client.on('message', async message => {
 
-	if (!message.author.bot) return;
+	if (message.author.bot) return;
 
 	console.log(`message was sent at ${message.createdAt}`)
 	console.log(`sender: ${message.author}\nserver sent in: ${message.guild}`)
