@@ -195,8 +195,8 @@ client.on('message', async message =>
 });
 
 client.on('message', async message => {
-	console.log('message was sent')
-	console.log(`this message was created at ${message.createdTimestamp}`)
+	console.log(`message was sent at ${message.createdAt}`)
+	console.log(`sender: ${message.author}\n server sent in: ${message.guild}\n channel sent in: ${message.channel}`)
 	console.log(`message content: ${message}`)
 });
 
