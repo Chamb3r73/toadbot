@@ -196,7 +196,7 @@ client.on('message', async message =>
 
 client.on('message', async message => {
 	console.log(`message was sent at ${message.createdAt}`)
-	console.log(`sender: ${message.author}\n server sent in: ${message.guild}\n channel sent in: ${message.channel}`)
+	console.log(`sender: ${message.author}\n server sent in: ${message.guild}`)
 	console.log(`message content: ${message}`)
 });
 
