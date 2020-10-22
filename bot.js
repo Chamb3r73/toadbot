@@ -2,7 +2,7 @@
 // const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const badWords = "test";
+// const badWords = "test";
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
 let statusChoice = ['t! | please mother', 't! | cock and ball torture', 't! | come to ends i dare you bruv', 't! | sex with nmarkov', 't! | polish toilet spin basshunter dota homosex K19191', 't! | Counter-Strike: Global Cumfensive', 't! | :toad:', 't! | Gato Tom, Estas bn? collaspso. coronavirus.'];
@@ -184,6 +184,7 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
+
 	} else if (message.content.includes("test")) {
 		console.log('test success')
 		message.channel.send('test success')
@@ -191,7 +192,11 @@ client.on('message', async message =>
 
 
 
-
 });
+
+client.on('message', async message => {
+	console.log('message was sent')
+});
+
 
 client.login(process.env.BOT_TOKEN);
