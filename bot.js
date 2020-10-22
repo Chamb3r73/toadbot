@@ -183,7 +183,7 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
-	} else if (message.content.includes === 'test') {
+	} else if (message.content.includes('test')) {
 		message.reply('test success')
 	}
 
