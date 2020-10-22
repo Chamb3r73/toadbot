@@ -185,6 +185,7 @@ client.on('message', async message =>
 		message.channel.send(invEmbed)
 	} else if (message.content.includes('test')) {
 		message.reply('test success')
+		message.channel.send('please')
 	}
 
 
