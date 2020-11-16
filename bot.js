@@ -1,4 +1,4 @@
-const testVAr = require('./commands.js');
+const testVar = require('./commands.js');
 // const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
