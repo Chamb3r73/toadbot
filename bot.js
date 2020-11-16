@@ -184,6 +184,8 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
+	} else if (command === 'testo') {
+		message.channel.send('hello')
 	}
 
 
