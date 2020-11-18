@@ -1,4 +1,4 @@
-const testVar = require('./commands.js');
+// const testVar = require('./commands.js');
 // const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -184,9 +184,9 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
-	} else if (command === 'testo') {
+	} /* else if (command === 'testo') {
 		message.channel.send(String(testVar))
-	}
+	} */
 
 
 
