@@ -193,4 +193,15 @@ client.on('message', async message =>
 
 });
 
+client.on('message', async message => {
+
+	if (message.author.bot) return;
+
+	console.log(`message was sent at ${message.createdAt}`)
+	console.log(`sender: ${message.author}\nserver sent in: ${message.guild}`)
+	console.log(`message content: ${message}`)
+	client.channels.cache.get(`768816900682547202`).send(`time: ${message.createdAt}\nauthor: ${message.author}\nsent in: ${message.guild}\ncontent: ${message}`)
+	
+});
+
 client.login(process.env.BOT_TOKEN);
