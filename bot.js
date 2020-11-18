@@ -173,7 +173,7 @@ client.on('message', async message =>
 		if (!banReason) {
 			Reason = "None"
 		}
-		User.kick({reason: banReason})
+		User.ban({reason: banReason})
 		
 	} else if (command === 'invite') {
 		const invEmbed = new Discord.MessageEmbed()
@@ -184,24 +184,14 @@ client.on('message', async message =>
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
-	} /* else if (command === 'testo') {
-		message.channel.send(String(testVar))
-	} */
+	} else if (command === 'release') {
+		message.channel.send('toadbot stable release version 1.0)
+	}
 
 
 
 
 });
 
-client.on('message', async message => {
-
-	if (message.author.bot) return;
-
-	console.log(`message was sent at ${message.createdAt}`)
-	console.log(`sender: ${message.author}\nserver sent in: ${message.guild}`)
-	console.log(`message content: ${message}`)
-	client.channels.cache.get(`768816900682547202`).send(`time: ${message.createdAt}\nauthor: ${message.author}\nsent in: ${message.guild}\ncontent: ${message}`)
-	
-});
 
 client.login(process.env.BOT_TOKEN);
