@@ -185,7 +185,7 @@ client.on('message', async message =>
 			.setFooter('i was made by @toad#9999')
 		message.channel.send(invEmbed)
 	} else if (command === 'release') {
-		message.channel.send('toadbot stable release version 1.0)
+		message.channel.send('toadbot stable release version 1.0')
 	}
 
 
