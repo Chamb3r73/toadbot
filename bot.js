@@ -154,10 +154,10 @@ client.on('message', async message =>
 		message.channel.send(pogEmbed)
 
 	} else if (command === 'kick') {
-		if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('invalid perms get rekt')
+		if (!message.member.hasPermission("KICK_MEMBERS") or !message.author === (583681050136281118)) return message.channel.send('invalid perms get rekt')
 		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
 		if (!User) return message.channel.send("Invalid User")
-		if (User.hasPermission("KICK_MEMBERS")) return message.reply("Invalid Permissions")
+		if (User.hasPermission("KICK_MEMBERS") or !message.author === (583681050136281118)) return message.reply("Invalid Permissions")
 		let kickReason = args.join(" ").slice(22);
 		if (!kickReason) {
 			Reason = "None"
