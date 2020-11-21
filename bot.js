@@ -1,7 +1,8 @@
 // const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const testVar = require('./commands.js');
+// const testVar = require('./commands.js');
+import { testVar } from './commands.js';
 const badWords = "test";
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
