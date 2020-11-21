@@ -4,8 +4,10 @@ module.exports = { testVar };
 
 module.exports = {
 
-    testofunc: function(message) {
-        message.channel.send('yo testy func')
-    }
+    name: 'testoFUNC',
+    description: 'crikey!',
+    execute(message, args) {
+        message.channel.send('crikey! thats a nice external command you got there toad!');
+    },
     
 };
