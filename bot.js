@@ -1,7 +1,7 @@
-// const testVar = require('./commands.js');
 // const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const testVar = require('./commands.js');
 const badWords = "test";
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
@@ -186,6 +186,8 @@ client.on('message', async message =>
 		message.channel.send(invEmbed)
 	} else if (command === 'release') {
 		message.channel.send('toadbot stable release version 1.0')
+	} else if (command === 'testo') {
+		message.channel.send(testVar)
 	}
 
 
