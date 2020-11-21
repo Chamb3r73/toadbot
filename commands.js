@@ -1,3 +1,3 @@
 const testVar = "hi tober";
-export { testVar };
+module.exports = { testVar };
 // export
