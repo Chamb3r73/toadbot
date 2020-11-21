@@ -1,3 +1,11 @@
+const Discord = require('discord.js');
 const testVar = "hi tober";
 module.exports = { testVar };
-// export
+
+module.exports = {
+
+    testofunc: function(message) {
+        message.channel.send('yo testy func')
+    }
+    
+};
