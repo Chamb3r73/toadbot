@@ -188,7 +188,7 @@ client.on('message', async message =>
 	} else if (command === 'release') {
 		message.channel.send('toadbot stable release version 1.0')
 	} else if (command === 'testo') {
-		message.channel.send(badWords)
+		message.channel.send(testVar)
 	}
 
 
