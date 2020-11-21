@@ -1,24 +1,12 @@
 // const fetch = require('node-fetch');
-const fs = require('fs');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-// const { testVar } = require('./commands.js');
-// const {  } = require('./commands.js');
-client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-
+const { testVar } = require('./commands.js');
+// import { testVar } from './commands.js';
+const badWords = "test";
+// var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
 let statusChoice = ['t! | please mother', 't! | cock and ball torture', 't! | come to ends i dare you bruv', 't! | sex with nmarkov', 't! | polish toilet spin basshunter dota homosex K19191', 't! | Counter-Strike: Global Cumfensive', 't! | :toad:', 't! | Gato Tom, Estas bn? collaspso. coronavirus.'];
-
-for (const file of commandFiles) {
-	const command = require(`./commands.js/${file}`);
-
-	// set a new item in the Collection
-	// with the key as the command name and the value as the exported module
-	client.commands.set(command.name, command);
-}
-
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
@@ -200,7 +188,7 @@ client.on('message', async message =>
 	} else if (command === 'release') {
 		message.channel.send('toadbot stable release version 1.0')
 	} else if (command === 'testo') {
-		client.commands.get('testoFUNC').execute(message, args);
+		message.channel.send(testVar)
 	}
 
 
