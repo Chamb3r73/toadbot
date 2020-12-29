@@ -189,6 +189,8 @@ client.on('message', async message =>
 		message.channel.send('toadbot stable release version 1.0')
 	} else if (command === 'testo') {
 		message.channel.send(testVar)
+	} else if (command === 'gay') {
+		message.reply('IS VERY GAY GAYEST PERSON SUCK COCK DAILY SEX HALAL ALLAH 2014 INDIAN PRON NO VIRUS 144P BRAZERS CORN');
 	}
 
 
