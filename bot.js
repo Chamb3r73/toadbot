@@ -191,7 +191,9 @@ client.on('message', async message =>
 		message.channel.send(testVar)
 	} else if (command === 'gay') {
 		message.reply('IS VERY GAY GAYEST PERSON SUCK COCK DAILY SEX HALAL ALLAH 2014 INDIAN PRON NO VIRUS 144P BRAZERS CORN');
-	}
+	} else if message.content.contains('gamer') {
+                message.channel.send('ban all g*mers!!!!!!!')
+        }
 
 
 
