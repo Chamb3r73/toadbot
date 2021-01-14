@@ -6,13 +6,13 @@ const { testVar } = require('./commands.js');
 const badWords = "test";
 // var PORT = process.env.PORT || 5000;
 var prefix = ("t!")
-let statusChoice = ['t! | please mother', 't! | cock and ball torture', 't! | come to ends i dare you bruv', 't! | sex with nmarkov', 't! | polish toilet spin basshunter dota homosex K19191', 't! | Counter-Strike: Global Cumfensive', 't! | :toad:', 't! | Gato Tom, Estas bn? collaspso. coronavirus.'];
+let statusChoice = ['t! | please mother', 't! | cock and ball torture', 't! | come to ends i dare you bruv', 't! | sex with nmarkov', 't! | polish toilet spin basshunter dota homosex K19191', 't! | Counter-Strike: Global Cumfensive', 't! | :toad:', 't! | Gato Tom, Estas bn? collaspso. coronavirus.', 't! | (better than hyperbot)'];
 
 client.once('ready', () => {
 	console.log('om bot online and ready');
 	setInterval(function(){
 		let displayedStatus = statusChoice[Math.floor(Math.random()*statusChoice.length)];
-		client.user.setPresence({
+		client.user.setPresence({hi
 			status: 'online',
 			activity:{
 				name: displayedStatus
