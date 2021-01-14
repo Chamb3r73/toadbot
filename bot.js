@@ -12,7 +12,7 @@ client.once('ready', () => {
 	console.log('om bot online and ready');
 	setInterval(function(){
 		let displayedStatus = statusChoice[Math.floor(Math.random()*statusChoice.length)];
-		client.user.setPresence({hi
+		client.user.setPresence({
 			status: 'online',
 			activity:{
 				name: displayedStatus
