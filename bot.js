@@ -195,7 +195,60 @@ client.on('message', async message =>
 		message.channel.send('@671021121847558145')
 	} else if (command === 'sus') {
 		message.channel.send(':bangbang:HOLY FUCKING SHIT:bangbang::bangbang::bangbang::bangbang: IS THAT A MOTHERFUCKING AMONG US REFERENCE??????!!!!!!!!! :scream::scream: AMONG US IS THE BEST FUCKING GAME :fire::fire::fire::fire::100::100::100::100: RED IS SO SUSSSSS :detective::detective::detective::detective::detective::detective::detective::red_square::red_square::red_square::red_square::red_square: COME TO MEDBAY AND WATCH ME SCAN :hospital::hospital::hospital::hospital::hospital::hospital::hospital::hospital: :hospital::hospital::hospital::hospital: WHY IS NO ONE FIXING O2 :face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage: OH YOUR CREWMATE? NAME EVERY TASK :gun::angry::gun::angry::gun::angry::gun::angry::gun::angry: Where Any sus!:question: :question: Where!:question: :question: Where! Any sus!:question: Where! :question: Any sus!:question: :question: Any sus! :question: :question: :question: :question: Where!Where!Where! Any sus!Where!Any sus Where!:question: Where! :question: Where!Any sus:question: :question: Any sus!  Where! :question: Where! :question: Any sus!:question: :question: :question: :question: Any sus! :question: :question: Where!:question: Any sus! :question: :question: Where!:question: :question: Where! :question: Where!Where! :question: :question: :question: :question: :question: :question: :question: Any sus!:question: :question: :question: Any sus!:question: :question: :question: :question: Where! :question: Where! Where!Any sus!Where! Where! :question: :question: :question: :question: :question: :question: I think it was purple!:eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes:It wasnt me I was in vents!!!!!!!!!!!!!!:joy::rofl::joy::rofl::joy::rofl::joy::joy::joy::rofl::rofl::rofl::joy::joy::joy:')
-	}
+	} else if (command === 'remindme') {
+		var message = msg;
+		try {
+			
+			// Variables
+			var returntime;
+			var timemeasure;
+			msg = msg.content.split(' ');
+			console.log('Message recieved from ' + message.author.id + ' at ' + Date.now().toString());
+
+			// Sets the return time
+			timemeasure = msg[1].substring((msg[1].length - 1), (msg[1].length))
+			returntime = msg[1].substring(0, (msg[1].length - 1))
+
+			// Based off the delimiter, sets the time
+			switch (timemeasure) {
+				case 's':
+					returntime = returntime * 1000;
+					break;
+
+				case 'm':
+					returntime = returntime * 1000 * 60;
+					break;
+
+				case 'h':
+					returntime = returntime * 1000 * 60 * 60;
+					break;
+
+				case 'd':
+					returntime = returntime * 1000 * 60 * 60 * 24;
+					break;
+
+				default:
+					returntime = returntime * 1000;
+					break;
+			}
+
+			// Returns the Message
+			client.setTimeout(function () {
+				// Removes the first 2 array items
+				msg.shift();
+				msg.shift();
+
+				// Creates the message
+				var content = msg.join();
+				content = content.replaceAll(',', ' ');
+				message.reply(content);
+				console.log('Message sent to ' + message.author.id + ' at ' + Date.now().toString());
+			}, returntime)
+		} catch (e) {
+			message.reply("An error has occured, please make sure the command has a time delimiter and message");
+			console.error(e.toString());
+		}
+
 
 
 
