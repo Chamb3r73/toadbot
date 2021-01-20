@@ -2,10 +2,6 @@
 
 repo to keep toadbot code n stuff
 
-all the code is here so take it if u want
+invite link: https://discord.com/oauth2/authorize?client_id=723171863886299156&permissions=2146959095&scope=bot
 
-the prefix is t!
 
-use t!help in discord for a list of commands
-
-have a nice day
