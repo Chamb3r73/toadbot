@@ -155,10 +155,10 @@ client.on('message', async message =>
 		message.channel.send(pogEmbed)
 
 	} else if (command === 'kick') {
-		if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('invalid perms get rekt')
+		if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('error: user does not have kick permissions')
 		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
 		if (!User) return message.channel.send("Invalid User")
-		if (User.hasPermission("KICK_MEMBERS")) return message.reply("Invalid Permissions")
+		if (User.hasPermission("KICK_MEMBERS")) return message.reply("error: subject has kick permissions")
 		let kickReason = args.join(" ").slice(22);
 		if (!kickReason) {
 			Reason = "None"
@@ -166,10 +166,10 @@ client.on('message', async message =>
 		User.kick({reason: kickReason})	
 
 	} else if (command === 'ban') {
-		if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('invalid perms get rekt')
-		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+		if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('error: user does not have ban permissions')
+		let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]) // new var "User" (the person being banned or kicked)
 		if (!User) return message.channel.send("Invalid User")
-		if (User.hasPermission("BAN_MEMBERS")) return message.reply("Invalid Permissions")
+		if (User.hasPermission("BAN_MEMBERS")) return message.reply("error: subject has ban permissions")
 		let banReason = args.join(" ").slice(22);
 		if (!banReason) {
 			Reason = "None"
