@@ -61,7 +61,7 @@ client.on('message', async message =>
 			    .setTitle('who doesnt love a good toad')
 			    .attachFiles(['toad/toad3.jpg'])
 			    .setImage('attachment://toad3.jpg')
-			message.channel.send(toadEmbed2)
+			message.channel.send(toadEmbed3)
 		} else if (toadRandom === 3) {
 			const toadEmbed4 = new Discord.MessageEmbed()
                 .setColor('#F47FFF')
