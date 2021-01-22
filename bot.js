@@ -226,8 +226,15 @@ client.on('message', async message =>
 		if (message.guild.me.hasPermission("KICK_MEMBERS")) {
 			message.channel.send('i have kick permissions')
 		}
+		else {
+			message.channel.send('i do not have kick permissions')
+		}
+		
 		if (message.guild.me.hasPermission("BAN_MEMBERS")) {
 			message.channel.send('i have ban permissions')
+		}
+		else {
+			message.channel.send('i do not have ban permissions')
 		}
 	}
 
