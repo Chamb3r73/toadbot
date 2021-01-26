@@ -241,9 +241,11 @@ client.on('message', async message =>
 			    message.channel.send('test works');
 			    break;
 
-			}
+		}
 	} else if (command === 'argstest') {
-        message.channel.send(args)
+		var argstestType_whatever = args;
+		message.channel.send(args)
+		message.channel.send(argstestType_whatever)
     }
 
 
