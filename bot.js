@@ -235,53 +235,32 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert') {
-        const nothingisheremovealong = args; // redundant name change later
+        const convType = (args[2]);
         message.channel.send(convType)
 		switch(convType) {
-                case "rmb-gbp":
-                    message.channel.send('this is supposed to be for rmb to gbp');
-                    break;
-                case "eur-gbp":
-                    message.channel.send('this is supposed to be for eur to gbp');
-                    break;
-                case "usd-gbp":
-                    message.channel.send('this is supposed to be for usd to gbp');
-                    break;
-                case "gbp-rmb":
-                    message.channel.send('this is supposed to be for gbp to rmb');
-                    break;
-                case "gbp-eur":
-                    message.channel.send('this is supposed to be for gbp to eur');
-                    break;
-                case "gbp-usd":
-                    message.channel.send('this is supposed to be for gbp to usd');
-                    break;
-                default:
-                    message.channel.send('that is not a supported conversion');
-                    break;
+			case "rmb-gbp":
+			    message.channel.send('this is supposed to be for rmb to gbp');
+			    break;
+			case "eur-gbp":
+			    message.channel.send('this is supposed to be for eur to gbp');
+			    break;
+			case "usd-gbp":
+			    message.channel.send('this is supposed to be for usd to gbp');
+			    break;
+			case "gbp-rmb":
+			    message.channel.send('this is supposed to be for gbp to rmb');
+			    break;
+			case "gbp-eur":
+			    message.channel.send('this is supposed to be for gbp to eur');
+			    break;
+			case "gbp-usd":
+			    message.channel.send('this is supposed to be for gbp to usd');
+			    break;
+			default:
+			    message.channel.send('that is not a supported conversion, or you cant spell');
+			    break;
 
         	}
-	} else if (command === 'arraytest') {
-		// var argstestType_whatever = args;
-		const convs = [
-
-		    "rmb=gbp",
-		    "something else" // put a comma back here later
-		    // "usd-gbp",
-		    // "gbp-rmb",
-		    // "gbp-eur",
-		    // "gbp-usd"
-
-		];
-
-		if (args === "rmb-gbp") {
-		    convType = 0
-		}
-		else {
-		    convType = 1
-		}
-		
-		message.channel.send(convs[convType])
 
 	} else if (command === 'argstest') {
         	// message.channel.send(args)
