@@ -236,6 +236,8 @@ client.on('message', async message =>
 		else {
 			message.channel.send('i do not have ban permissions')
 		}
+	} else if (command === 'rmb') {
+		message.channel.send(args * 0.11)
 	}
 
 
