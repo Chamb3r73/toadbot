@@ -238,7 +238,7 @@ client.on('message', async message =>
         	var convType = args;
 		message.channel.send(convType)
 		switch(convType) {
-                	case "rmb-gbp":
+                	case (convType === "rmb-gbp"):
                      		message.channel.send('this is supposed to be for rmb to gbp');
                     		break;
                 	case "eur-gbp":
