@@ -235,64 +235,53 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert' || command === 'conv') {
-		const convEmbed = new Discord.MessageEmbed()
-		    .setTitle('Converter')
-		    .setDescription('You are converting: ', convType, '\n', (args[0].slice(0, 3)), 'into ', (args[0].slice(4, 8)), '\nAnswer: ', answer)
 		const convType = (args[0]);
 			switch(convType) {
 				case "rmb-usd":
 				    var answer = (args[1] * 0.154676)
-				    message.channel.send(convEmbed);
 				    break;
 				case "rmb-eur":
 				    var answer = (args[1] * 0.127156)
-				    message.channel.send(convEmbed);
 				    break;
 				case "rmb-gbp":
 				    var answer = (args[1] * 0.112608)
-				    message.channel.send(convEmbed);
 				    break;
 				case "eur-rmb":
 				    var answer = (args[1] * 7.86487)
-				    message.channel.send(convEmbed);
 				    break;
 				case "eur-usd":
 				    var answer = (args[1] * 1.21646)
-				    message.channel.send(convEmbed);
 				    break;
 				case "eur-gbp":
 				    var answer = (args[1] * 0.885537)
-				    message.channel.send(convEmbed);
 				    break;
 				case "usd-rmb":
 				    var answer = (args[1] *  6.46561)
-				    message.channel.send(convEmbed);
 				    break;
 				case "usd-eur":
 				    var answer = (args[1] *  0.822105)
-				    message.channel.send(convEmbed);
 				    break;
 				case "usd-gbp":
 				    var answer = (args[1] *  0.727969)
-				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-rmb":
 				    var answer = (args[1] *  8.88066)
-				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-eur":
 				    var answer = (args[1] *  1.12929)
-				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-usd":
 				    var answer = (args[1] *  1.37359)
-				    message.channel.send(convEmbed);
 				    break;
 				default:
 				    message.channel.send('that is not a supported conversion, or you cant spell');
 				    break;
 
-        }
+		}
+		const convEmbed = new Discord.MessageEmbed()
+		    .setTitle('Converter')
+		    .setDescription('You are converting: ', convType, '\n', (args[0].slice(0, 3)), 'into ', (args[0].slice(4, 8)), '\nAnswer: ', answer)
+		message.channel.send(convEmbed)
 
     }
 
