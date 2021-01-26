@@ -261,10 +261,16 @@ client.on('message', async message =>
                     		break;
 
         }
-	} else if (command === 'argstest') {
+	} else if (command === 'switchtest') {
         var argstestType_whatever = args;
-        message.channel.send(args)
-        message.channel.send(argstestType_whatever)
+        switch(argstestType_whatever) {
+            case "test":
+                message.channel.send('test worked');
+                break;
+            default:
+                message.channel.send('you didnt write test i guess');
+		break;
+        }
     }
 
 
