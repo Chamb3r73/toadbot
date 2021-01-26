@@ -280,7 +280,8 @@ client.on('message', async message =>
 		}
 		const convEmbed = new Discord.MessageEmbed()
 		    .setTitle('Converter')
-		    .setDescription('You are converting: ', convType, '\n', (args[0].slice(0, 3)), 'into ', (args[0].slice(4, 8)), '\nAnswer: ', answer)
+		    .setDescription(('You are converting: ', convType, '\n', (args[0].slice(0, 3)), 'into ', (args[0].slice(4, 8)), '\nAnswer: ', answer))
+            	    .setColor('#F47FFF')
 		message.channel.send(convEmbed)
 
     }
