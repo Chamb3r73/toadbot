@@ -283,7 +283,9 @@ client.on('message', async message =>
 		
 		message.channel.send(convs[convType])
 
-	}
+	} else if (command === 'argstest') {
+        	message.channel.send(args)
+    	}
 
 
 
