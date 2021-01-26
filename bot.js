@@ -235,7 +235,7 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert') {
-        const convType = (args[2]);
+        const convType = (args[1]);
         message.channel.send(convType)
 		switch(convType) {
 			case "rmb-gbp":
@@ -264,7 +264,7 @@ client.on('message', async message =>
 
 	} else if (command === 'argstest') {
         	// message.channel.send(args)
-		message.channel.send(args[2])
+		message.channel.send(args[1])
     	}
 
 
