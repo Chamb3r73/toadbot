@@ -123,7 +123,7 @@ client.on('message', async message =>
 		
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
-			.setFooter('i was made by @toad#7051') 
+			.setFooter('i was made by @toad#7051 \nDISCLAIMER: currency conversions are accurate as of 26/01/21 - use casually')
 		message.channel.send(helpEmbed)
 
 
@@ -235,51 +235,67 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert' || command === 'conv') {
+		const convEmbed = new Discord.MessageEmbed()
+		    .setTitle('Converter')
+		    .setDescription('You are converting: ', convType, '\n', (args[0].slice(0, 3)), 'into ', (args[0].slice(4, 8)), '\nAnswer: ', answer)
 		const convType = (args[0]);
-		switch(convType) {
-			case "rmb-usd":
-			    message.channel.send(args[1] * 0.15);
-			    break;
-			case "rmb-eur":
-			    message.channel.send(agrs[1] * 0.13);
-			    break;
-			case "rmb-gbp":
-			    message.channel.send(args[1] * 0.11);
-			    break;
-			case "eur-rmb":
-			    message.channel.send(args[1] * 7.87);
-			    break;
-			case "eur-usd":
-			    message.channel.send(args[1] * 1.22);
-			    break;
-			case "eur-gbp":
-			    message.channel.send(args[1 * 0.89]);
-			    break;
-			case "usd-rmb":
-			    message.channel.send(args[1] * 6.47);
-			    break;
-			case "usd-eur":
-			    message.channel.send(args[1] * 0.82);
-			    break;
-			case "usd-gbp":
-			    message.channel.send(args[1] * 0.73);
-			    break;
-			case "gbp-rmb":
-			    message.channel.send(args[1] * 8.88);
-			    break;
-			case "gbp-eur":
-			    message.channel.send(args[1] * 1.13);
-			    break;
-			case "gbp-usd":
-			    message.channel.send(args[1] * 1.37);
-			    break;
-			default:
-			    message.channel.send('that is not a supported conversion, or you cant spell');
-			    break;
+			switch(convType) {
+				case "rmb-usd":
+				    const answer = (args[1] * 0.154676)
+				    message.channel.send(convEmbed);
+				    break;
+				case "rmb-eur":
+				    const answer = (args[1] * 0.127156)
+				    message.channel.send(convEmbed);
+				    break;
+				case "rmb-gbp":
+				    const answer = (args[1] * 0.112608)
+				    message.channel.send(convEmbed);
+				    break;
+				case "eur-rmb":
+				    const answer = (args[1] * 7.86487)
+				    message.channel.send(convEmbed);
+				    break;
+				case "eur-usd":
+				    const answer = (args[1] * 1.21646)
+				    message.channel.send(convEmbed);
+				    break;
+				case "eur-gbp":
+				    const answer = (args[1] * 0.885537)
+				    message.channel.send(convEmbed);
+				    break;
+				case "usd-rmb":
+				    const answer = (args[1] *  6.46561)
+				    message.channel.send(convEmbed);
+				    break;
+				case "usd-eur":
+				    const answer = (args[1] *  0.822105)
+				    message.channel.send(convEmbed);
+				    break;
+				case "usd-gbp":
+				    const answer = (args[1] *  0.727969)
+				    message.channel.send(convEmbed);
+				    break;
+				case "gbp-rmb":
+				    const answer = (args[1] *  8.88066)
+				    message.channel.send(convEmbed);
+				    break;
+				case "gbp-eur":
+				    const answer = (args[1] *  1.12929)
+				    message.channel.send(convEmbed);
+				    break;
+				case "gbp-usd":
+				    const answer = (args[1] *  1.37359)
+				    message.channel.send(convEmbed);
+				    break;
+				default:
+				    message.channel.send('that is not a supported conversion, or you cant spell');
+				    break;
 
-		}
+        }
 
-	}
+    }
+
 
 
 
