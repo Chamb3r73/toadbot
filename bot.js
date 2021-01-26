@@ -234,7 +234,7 @@ client.on('message', async message =>
 			message.channel.send('i do not have ban permissions')
         }
         
-	} else if (command === 'convert') {
+	} else if (command === 'convert' || command === 'conv') {
         const convType = (args[0]);
         message.channel.send(convType)
 		switch(convType) {
@@ -262,10 +262,7 @@ client.on('message', async message =>
 
         	}
 
-	} else if (command === 'argstest') {
-        	// message.channel.send(args)
-		message.channel.send(args[1])
-    	}
+	}
 
 
 
