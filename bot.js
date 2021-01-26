@@ -235,32 +235,49 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert' || command === 'conv') {
-        const convType = (args[0]);
-        message.channel.send(convType)
+		const convType = (args[0]);
 		switch(convType) {
+			case "rmb-usd":
+			    message.channel.send(args[1] * 0.15);
+			    break;
+			case "rmb-eur":
+			    message.channel.send(agrs[1] * 0.13);
+			    break;
 			case "rmb-gbp":
-			    message.channel.send('this is supposed to be for rmb to gbp');
+			    message.channel.send(args[1] * 0.11);
+			    break;
+			case "eur-rmb":
+			    message.channel.send(args[1] * 7.87);
+			    break;
+			case "eur-usd":
+			    message.channel.send(args[1] * 1.22);
 			    break;
 			case "eur-gbp":
-			    message.channel.send('this is supposed to be for eur to gbp');
+			    message.channel.send(args[1 * 0.89]);
+			    break;
+			case "usd-rmb":
+			    message.channel.send(args[1] * 6.47);
+			    break;
+			case "usd-eur":
+			    message.channel.send(args[1] * 0.82);
 			    break;
 			case "usd-gbp":
-			    message.channel.send('this is supposed to be for usd to gbp');
+			    message.channel.send(args[1] * 0.73);
 			    break;
 			case "gbp-rmb":
-			    message.channel.send('this is supposed to be for gbp to rmb');
+			    message.channel.send(args[1] * 8.88);
 			    break;
 			case "gbp-eur":
-			    message.channel.send('this is supposed to be for gbp to eur');
+			    message.channel.send(args[1] * 1.13);
 			    break;
 			case "gbp-usd":
-			    message.channel.send('this is supposed to be for gbp to usd');
+			    message.channel.send(args[1] * 1.37);
 			    break;
 			default:
 			    message.channel.send('that is not a supported conversion, or you cant spell');
 			    break;
 
-        	}
+		}
 
 	}
 
