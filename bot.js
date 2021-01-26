@@ -112,18 +112,18 @@ client.on('message', async message =>
 			.addFields(
 				{
 					name: "babbabouey:",
-					value: "t!bot - bot status \n t!toad - random toad pic (dm me more) \n t!server - server info \n t!bobberto - epik funny \n t!say - bot repeats what you said and deletes your message \n t!help - list of commands \n t!pog - poggers \n t!kick - kicks @ed user \n t!ban - bans @ed user \n t!invite - invite link just for you buddy",
+					value: "t!bot - bot status \nt!toad - random toad pic (dm me more) \nt!server - server info \nt!say - bot repeats what you said and deletes your message \nt!help - list of commands \nt!pog - poggers \nt!kick - kicks @ed user \nt!ban - bans @ed user \nt!invite - invite link just for you buddy \nt!sus - when the pretender is disingenuous \n",
 				},
 				
 				{
-					name: "coming soon",
-					value: "t!mute - mutes @ed user \n reaction roles (exciting)",
+					name: "conversion",
+					value: "t!rmb-gbp - convert rmb to gbp \nt!eur-gbp - convert eur to gbp \nt!usd-gbp - convert usd to gbp \nt!gbp-rmb - convert gbp to rmb \nt!gbp-eur - convert gbp to eur \nt!gbp-usd - convert gbp to usd"
 				}
 			)
 		
 			.attachFiles(['linusface.jpg'])
 			.setThumbnail('attachment://linusface.jpg')
-			.setFooter('i was made by @toad#9999') 
+			.setFooter('i was made by @toad#7051') 
 		message.channel.send(helpEmbed)
 
 
@@ -208,20 +208,17 @@ client.on('message', async message =>
 			.setURL('http://discord.com/api/oauth2/authorize?client_id=723171863886299156&permissions=2146959095&scope=bot')
 			.setDescription(':flushball:')
 			.setFooter('i was made by @toad#9999')
-		message.channel.send(invEmbed)
-	} else if (command === 'release') {
-		message.channel.send('toadbot stable release version 1.0')
-	} else if (command === 'testo') {
-		message.channel.send(testVar)
-	} else if (command === 'gay') {
-		message.reply('IS VERY GAY GAYEST PERSON SUCK COCK DAILY SEX HALAL ALLAH 2014 INDIAN PRON NO VIRUS 144P BRAZERS CORN');
-	} else if (command === 'ginge') {
+        message.channel.send(invEmbed)
+        
+	/* } else if (command === 'ginge') {
 		var i = 0
 		for (; i < 51; i++) {
 			message.channel.send('<@671021121847558145>')
-		}
+        }
+        */
 	} else if (command === 'sus') {
-		message.channel.send(':bangbang:HOLY FUCKING SHIT:bangbang::bangbang::bangbang::bangbang: IS THAT A MOTHERFUCKING AMONG US REFERENCE??????!!!!!!!!! :scream::scream: AMONG US IS THE BEST FUCKING GAME :fire::fire::fire::fire::100::100::100::100: RED IS SO SUSSSSS :detective::detective::detective::detective::detective::detective::detective::red_square::red_square::red_square::red_square::red_square: COME TO MEDBAY AND WATCH ME SCAN :hospital::hospital::hospital::hospital::hospital::hospital::hospital::hospital: :hospital::hospital::hospital::hospital: WHY IS NO ONE FIXING O2 :face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage: OH YOUR CREWMATE? NAME EVERY TASK :gun::angry::gun::angry::gun::angry::gun::angry::gun::angry: Where Any sus!:question: :question: Where!:question: :question: Where! Any sus!:question: Where! :question: Any sus!:question: :question: Any sus! :question: :question: :question: :question: Where!Where!Where! Any sus!Where!Any sus Where!:question: Where! :question: Where!Any sus:question: :question: Any sus!  Where! :question: Where! :question: Any sus!:question: :question: :question: :question: Any sus! :question: :question: Where!:question: Any sus! :question: :question: Where!:question: :question: Where! :question: Where!Where! :question: :question: :question: :question: :question: :question: :question: Any sus!:question: :question: :question: Any sus!:question: :question: :question: :question: Where! :question: Where! Where!Any sus!Where! Where! :question: :question: :question: :question: :question: :question: I think it was purple!:eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes:It wasnt me I was in vents!!!!!!!!!!!!!!:joy::rofl::joy::rofl::joy::rofl::joy::joy::joy::rofl::rofl::rofl::joy::joy::joy:')
+        message.channel.send(':bangbang:HOLY FUCKING SHIT:bangbang::bangbang::bangbang::bangbang: IS THAT A MOTHERFUCKING AMONG US REFERENCE??????!!!!!!!!! :scream::scream: AMONG US IS THE BEST FUCKING GAME :fire::fire::fire::fire::100::100::100::100: RED IS SO SUSSSSS :detective::detective::detective::detective::detective::detective::detective::red_square::red_square::red_square::red_square::red_square: COME TO MEDBAY AND WATCH ME SCAN :hospital::hospital::hospital::hospital::hospital::hospital::hospital::hospital: :hospital::hospital::hospital::hospital: WHY IS NO ONE FIXING O2 :face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage::face_with_symbols_over_mouth::face_with_symbols_over_mouth::rage: OH YOUR CREWMATE? NAME EVERY TASK :gun::angry::gun::angry::gun::angry::gun::angry::gun::angry: Where Any sus!:question: :question: Where!:question: :question: Where! Any sus!:question: Where! :question: Any sus!:question: :question: Any sus! :question: :question: :question: :question: Where!Where!Where! Any sus!Where!Any sus Where!:question: Where! :question: Where!Any sus:question: :question: Any sus!  Where! :question: Where! :question: Any sus!:question: :question: :question: :question: Any sus! :question: :question: Where!:question: Any sus! :question: :question: Where!:question: :question: Where! :question: Where!Where! :question: :question: :question: :question: :question: :question: :question: Any sus!:question: :question: :question: Any sus!:question: :question: :question: :question: Where! :question: Where! Where!Any sus!Where! Where! :question: :question: :question: :question: :question: :question: I think it was purple!:eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes::eyes:It wasnt me I was in vents!!!!!!!!!!!!!!:joy::rofl::joy::rofl::joy::rofl::joy::joy::joy::rofl::rofl::rofl::joy::joy::joy:')
+        
 	} else if (command === 'permcheck') {
 		if (message.guild.me.hasPermission("KICK_MEMBERS")) {
 			message.channel.send('i have kick permissions')
@@ -235,9 +232,16 @@ client.on('message', async message =>
 		}
 		else {
 			message.channel.send('i do not have ban permissions')
-		}
-	} else if (command === 'rmb') {
-		message.channel.send(args * 0.11)
+        }
+        
+	} else if (command === 'convert') {
+        var convType = args;
+		switch(convType) {
+
+            case "rmb-gbp":
+                message.channel.send('test works')
+
+        }
 	}
 
 
