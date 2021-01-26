@@ -116,8 +116,8 @@ client.on('message', async message =>
 				},
 				
 				{
-					name: "conversion",
-					value: "t!rmb-gbp - convert rmb to gbp \nt!eur-gbp - convert eur to gbp \nt!usd-gbp - convert usd to gbp \nt!gbp-rmb - convert gbp to rmb \nt!gbp-eur - convert gbp to eur \nt!gbp-usd - convert gbp to usd"
+					name: "convTypes",
+					value: "currencies - rmb, eur, usd, gbp \nmeasurement: coming soon"
 				}
 			)
 		
