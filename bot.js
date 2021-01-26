@@ -241,51 +241,51 @@ client.on('message', async message =>
 		const convType = (args[0]);
 			switch(convType) {
 				case "rmb-usd":
-				    const answer = (args[1] * 0.154676)
+				    var answer = (args[1] * 0.154676)
 				    message.channel.send(convEmbed);
 				    break;
 				case "rmb-eur":
-				    const answer = (args[1] * 0.127156)
+				    var answer = (args[1] * 0.127156)
 				    message.channel.send(convEmbed);
 				    break;
 				case "rmb-gbp":
-				    const answer = (args[1] * 0.112608)
+				    var answer = (args[1] * 0.112608)
 				    message.channel.send(convEmbed);
 				    break;
 				case "eur-rmb":
-				    const answer = (args[1] * 7.86487)
+				    var answer = (args[1] * 7.86487)
 				    message.channel.send(convEmbed);
 				    break;
 				case "eur-usd":
-				    const answer = (args[1] * 1.21646)
+				    var answer = (args[1] * 1.21646)
 				    message.channel.send(convEmbed);
 				    break;
 				case "eur-gbp":
-				    const answer = (args[1] * 0.885537)
+				    var answer = (args[1] * 0.885537)
 				    message.channel.send(convEmbed);
 				    break;
 				case "usd-rmb":
-				    const answer = (args[1] *  6.46561)
+				    var answer = (args[1] *  6.46561)
 				    message.channel.send(convEmbed);
 				    break;
 				case "usd-eur":
-				    const answer = (args[1] *  0.822105)
+				    var answer = (args[1] *  0.822105)
 				    message.channel.send(convEmbed);
 				    break;
 				case "usd-gbp":
-				    const answer = (args[1] *  0.727969)
+				    var answer = (args[1] *  0.727969)
 				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-rmb":
-				    const answer = (args[1] *  8.88066)
+				    var answer = (args[1] *  8.88066)
 				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-eur":
-				    const answer = (args[1] *  1.12929)
+				    var answer = (args[1] *  1.12929)
 				    message.channel.send(convEmbed);
 				    break;
 				case "gbp-usd":
-				    const answer = (args[1] *  1.37359)
+				    var answer = (args[1] *  1.37359)
 				    message.channel.send(convEmbed);
 				    break;
 				default:
