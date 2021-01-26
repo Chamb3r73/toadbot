@@ -235,29 +235,30 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert') {
-        var convType = args;
+        	var convType = args;
+		message.channel.send(convType)
 		switch(convType) {
-                case "rmb-gbp":
-                    message.channel.send('this is supposed to be for rmb to gbp');
-                    break;
-                case "eur-gbp":
-                    message.channel.send('this is supposed to be for eur to gbp');
-                    break;
-                case "usd-gbp":
-                    message.channel.send('this is supposed to be for usd to gbp');
-                    break;
-                case "gbp-rmb":
-                    message.channel.send('this is supposed to be for gbp to rmb');
-                    break;
-                case "gbp-eur":
-                    message.channel.send('this is supposed to be for gbp to eur');
-                    break;
-                case "gbp-usd":
-                    message.channel.send('this is supposed to be for gbp to usd');
-                    break;
-                default:
-                    message.channel.send('that is not a supported conversion');
-                    break;
+                	case "rmb-gbp":
+                     		message.channel.send('this is supposed to be for rmb to gbp');
+                    		break;
+                	case "eur-gbp":
+                    		message.channel.send('this is supposed to be for eur to gbp');
+                    		break;
+                	case "usd-gbp":
+                    		message.channel.send('this is supposed to be for usd to gbp');
+                    		break;
+                	case "gbp-rmb":
+                    		message.channel.send('this is supposed to be for gbp to rmb');
+                    		break;
+                	case "gbp-eur":
+                    		message.channel.send('this is supposed to be for gbp to eur');
+                    		break;
+                	case "gbp-usd":
+                    		message.channel.send('this is supposed to be for gbp to usd');
+                    		break;
+                	default:
+                   		message.channel.send('that is not a supported conversion');
+                    		break;
 
         }
 	} else if (command === 'argstest') {
