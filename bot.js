@@ -235,13 +235,12 @@ client.on('message', async message =>
         }
         
 	} else if (command === 'convert') {
-        var convType = args;
+        	var convType = args;
 		switch(convType) {
+			case "rmb-gbp":
+                		message.channel.send('test works')
 
-            case "rmb-gbp":
-                message.channel.send('test works')
-
-        }
+        	}
 	}
 
 
