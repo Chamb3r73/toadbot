@@ -149,8 +149,7 @@ client.on('message', async message =>
 		
 	} else if (command === 'pog') {
 		const pogEmbed = new Discord.MessageEmbed()
-			.attachFiles(['pog.gif'])
-			.setImage('attachment://pog.gif')
+			.setDescription('https://cdn.discordapp.com/attachments/793543648284246030/803982195634077746/pog.gif')
 			.setColor('#F47FFF')
 		message.channel.send(pogEmbed)
 
@@ -285,6 +284,10 @@ client.on('message', async message =>
             	    .setColor('#F47FFF')
 		message.channel.send(convEmbed)
 
+    } else if (command === 'allah') {
+    	message.channel.send('https://media.discordapp.net/attachments/296056831514509312/739892457239740526/20200803_120740.gif')
+    } else if (commmand === 'bals') {
+    	message.channel.send(':rofl: :drooling_face:')
     }
 
 
