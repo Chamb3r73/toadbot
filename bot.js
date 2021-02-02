@@ -286,7 +286,7 @@ client.on('message', async message =>
 
     } else if (command === 'allah') {
     	message.channel.send('https://media.discordapp.net/attachments/296056831514509312/739892457239740526/20200803_120740.gif')
-    } else if (commmand === 'bals') {
+    } else if (command === 'bals') {
     	message.channel.send('real life catboy toadbot')
     } else if (client.author.id === '723131892387414047') {
         message.channel.send('https://tenor.com/view/ok-weeb-weeb-anime-hentai-republican-gif-19404829')
