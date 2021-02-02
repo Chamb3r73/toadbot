@@ -288,24 +288,12 @@ client.on('message', async message =>
     	message.channel.send('https://media.discordapp.net/attachments/296056831514509312/739892457239740526/20200803_120740.gif')
     } else if (commmand === 'bals') {
     	message.channel.send(':rofl: :drooling_face:')
+    } else if (message.author.id === '723131892387414047') {
+        message.channel.send('https://tenor.com/view/ok-weeb-weeb-anime-hentai-republican-gif-19404829')
     }
 
 	 
 });
-	 
-client.on('message', async message => 
-	
-	{if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        const args = message.content.slice(prefix.length).trim().split(/ +/);
-        const command = args.shift().toLowerCase();
-            if (message.author.id === '723131892387414047') {
-                message.channel.send('https://tenor.com/view/ok-weeb-weeb-anime-hentai-republican-gif-19404829')
-            }
-
-
-
-
-	});
 
 client.login(process.env.BOT_TOKEN);
