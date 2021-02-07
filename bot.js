@@ -149,7 +149,6 @@ client.on('message', async message =>
 		
 	} else if (command === 'pog') {
 		const pogEmbed = new Discord.MessageEmbed()
-			.setDescription('https://cdn.discordapp.com/attachments/793543648284246030/803982195634077746/pog.gif')
 			.setImage('https://cdn.discordapp.com/attachments/793543648284246030/803982195634077746/pog.gif')
 			.setColor('#F47FFF')
 		message.channel.send(pogEmbed)
