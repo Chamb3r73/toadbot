@@ -291,7 +291,7 @@ client.on('message', async message =>
     } else if (client.author.id === '575051919395913728') {
         message.channel.send('https://tenor.com/view/ok-weeb-weeb-anime-hentai-republican-gif-19404829')
     } else if (command === 'typing') {
-        times = 5
+        var times = 5
         message.channel.startTyping();
         for (i = 0; i < (times + 1); i++) {
             message.channel.send('i typed!');
