@@ -154,7 +154,17 @@ client.on('message', async message =>
 		message.channel.send(pogEmbed)
 
 	} else if (command === 'kick') {
-		if (message.author.id === '583681050136281118' or message.author.id === '221956660200079361') {
+		if (message.author.id === '583681050136281118') {
+			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+			if (!User) return message.channel.send("Invalid User")
+			let kickReason = args.join(" ").slice(22);
+			if (!kickReason) {
+				Reason = "None"
+			}
+			User.kick({reason: kickReason})
+		}
+		
+		else if (message.author.id === '221956660200079361') {
 			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
 			if (!User) return message.channel.send("Invalid User")
 			let kickReason = args.join(" ").slice(22);
@@ -177,7 +187,17 @@ client.on('message', async message =>
 		}
 
 	} else if (command === 'ban') {
-		if (message.author.id === '583681050136281118' or message.author.id === '221956660200079361') {
+		if (message.author.id === '583681050136281118') {
+			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]) // new var "User" (the person being banned or kicked)
+			if (!User) return message.channel.send("Invalid User")
+			let banReason = args.join(" ").slice(22);
+			if (!banReason) {
+			Reason = "None"
+			}
+			User.ban({reason: banReason})
+		}
+		
+		if (message.author.id === '221956660200079361') {
 			let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]) // new var "User" (the person being banned or kicked)
 			if (!User) return message.channel.send("Invalid User")
 			let banReason = args.join(" ").slice(22);
